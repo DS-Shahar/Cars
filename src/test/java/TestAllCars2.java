@@ -1,15 +1,8 @@
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 public class TestAllCars2 {
 
-   @Test
-   public void testB2()
+   public void main()
    {
       AllCars a = new AllCars(4);
       
@@ -18,19 +11,19 @@ public class TestAllCars2 {
       
       c = new Car("8080488", false, 95_000);
       b = a.addCar(c);
-      assertEquals(b, true);
+      assert(b);
 
       c = new Car("9911485", true, 60_000);
       b = a.addCar(c);
-      assertEquals(b, true);
+      assert(b);
 
       c = new Car("8458544", false, 60_000);
       b = a.addCar(c);
-      assertEquals(b, true);
+      assert(b);
       
       c = new Car("7588321", false, 70_000);
       b = a.addCar(c);
-      assertEquals(b, true);
+      assert(b);
       
       a.print(50_000, 90_000);
    }
