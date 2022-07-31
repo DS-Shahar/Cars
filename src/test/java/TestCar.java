@@ -6,17 +6,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-public class TestRectangle {
+public class TestCar {
 
    @Test
-   public void testProps()
+   public void testA()
    {
-     Rectangle r = new Rectangle(10, 20);
+      Car c = new Car("8080488", false, 95_000);
 
-     int w = r.getWidth();
-     assertEquals(w, 10);
-     
-     int h = r.getHeight();
-     assertEquals(h, 20);
+      boolean b = c.range(80_000, 100_000);     
+      assertEquals(b, true);
+
+      b = c.range(100_000, 200_000);     
+      assertEquals(b, false);
    }
 }
