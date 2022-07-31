@@ -2,7 +2,7 @@
 
 public class TestAllCars2 {
 
-   public void main()
+   public static void main(String[] args)
    {
       AllCars a = new AllCars(4);
       
