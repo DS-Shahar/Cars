@@ -11,7 +11,7 @@ public class TestAllCars2 {
    @Test
    public void testB2()
    {
-      AllCars a = new AllCars(3);
+      AllCars a = new AllCars(4);
       
       Car c;
       boolean b;
@@ -20,14 +20,18 @@ public class TestAllCars2 {
       b = a.addCar(c);
       assertEquals(b, true);
 
-      c = new Car("9911485", true, 50_000);
+      c = new Car("9911485", true, 60_000);
+      b = a.addCar(c);
+      assertEquals(b, true);
+
+      c = new Car("8458544", false, 60_000);
       b = a.addCar(c);
       assertEquals(b, true);
       
-      c = new Car("7588321", false, 75_000);
+      c = new Car("7588321", false, 70_000);
       b = a.addCar(c);
       assertEquals(b, true);
       
-      a.print(70_000, 80_000);
+      a.print(50_000, 90_000);
    }
 }
