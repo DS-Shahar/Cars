@@ -1,10 +1,10 @@
 public class Car {
   
   private String licenseNum;
-  private boolean hadAcciden‬‬t;
+  private boolean hadAccident;
   private int price;
   
-  public Car(‫‪String licenseNum, boolean hadAccident, int price) {
+  public Car(String licenseNum, boolean hadAccident, int price) {
     this.licenseNum = licenseNum;
     this.hadAccident = hadAccident;
     this.price = price;
