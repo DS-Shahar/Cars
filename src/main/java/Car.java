@@ -14,12 +14,12 @@ public class Car {
     return licenseNum;
   }
   
-  public void setLicenseNum(int licenseNum) {
+  public void setLicenseNum(String licenseNum) {
     this.licenseNum = licenseNum;
   }
   
-  public boolean hadAccident() {
-    reutrn hadAccident;
+  public boolean getHadAccident() {
+    return hadAccident;
   }
   
   public void setHadAccident(boolean hadAccident) {
